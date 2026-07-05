@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export { HomePage } from "./ui/home-page";
+export { Home } from "./ui/Home";
 
 export const metadata: Metadata = {
   title: "Portfolio",

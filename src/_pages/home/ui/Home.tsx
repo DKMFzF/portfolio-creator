@@ -1,6 +1,6 @@
 import { Sector, Main } from "@/shared/ui";
 
-export function HomePage() {
+export function Home() {
   return (
     <Main>
       <Sector>
