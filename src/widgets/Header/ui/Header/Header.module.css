@@ -3,4 +3,7 @@
   top: var(--padding-page);
   left: var(--padding-page);
   right: var(--padding-page);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
