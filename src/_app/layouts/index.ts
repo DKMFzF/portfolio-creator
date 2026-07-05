@@ -1,1 +1,1 @@
-export * from "./ui/root-layout";
+export * from "./ui/RootLayout";
