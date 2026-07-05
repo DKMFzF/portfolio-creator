@@ -1,0 +1,11 @@
+.AboutMe {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.AboutMe__name {
+  display: flex;
+  gap: 1rem;
+}
