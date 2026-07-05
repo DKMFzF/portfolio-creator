@@ -1,7 +1,11 @@
+import { Sector, Main } from "@/shared/ui";
+
 export function HomePage() {
   return (
-    <main>
-      <h1>Portfolio</h1>
-    </main>
+    <Main>
+      <Sector>
+        Привет мир!
+      </Sector>
+    </Main>
   );
 }
