@@ -6,6 +6,10 @@ export type Route = {
 
 export const routes: Route[] = [
   {
+    link: "/projects",
+    name: "projects",
+  },
+  {
     link: "/lab",
     name: "lab",
   },
@@ -19,7 +23,12 @@ export const routes: Route[] = [
     target: "_blank",
   },
   {
-    link: "какая-то ссылка",
+    link: "https://github.com/DKMFzF",
+    name: "github",
+    target: "_blank",
+  },
+  {
+    link: "https://t.me/+UqvsCpwYgSsxZWVi",
     name: "blog",
     target: "_blank",
   }
