@@ -7,4 +7,5 @@
   align-items: center;
   justify-content: space-between;
   mix-blend-mode: difference;
+  z-index: 1;
 }
