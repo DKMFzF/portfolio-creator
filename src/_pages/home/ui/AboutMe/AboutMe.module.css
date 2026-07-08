@@ -3,6 +3,8 @@
   width: 100%;
   justify-content: space-between;
   align-items: end;
+  mix-blend-mode: difference;
+  color: #fff;
 }
 
 .AboutMe__name {
