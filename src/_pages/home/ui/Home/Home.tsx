@@ -1,7 +1,6 @@
-import { Main, Sector } from "@/shared/ui";
+import { CanvasBg, Main, Sector } from "@/shared/ui";
 
 import { AboutMe } from "../AboutMe";
-import { CanvasBg } from "../CanvasBg";
 
 export function Home() {
   return (

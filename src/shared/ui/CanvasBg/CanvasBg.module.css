@@ -1,0 +1,25 @@
+.CanvasBg {
+  position: fixed;
+  inset: 0;
+  z-index: var(--canvas-bg-z-index);
+}
+
+.CanvasBg canvas {
+  opacity: 0;
+  touch-action: none;
+  animation-name: CanvasBg__fade-in;
+  animation-duration: var(--canvas-bg-fade-duration);
+  animation-timing-function: var(--canvas-bg-fade-easing);
+  animation-delay: var(--canvas-bg-fade-delay);
+  animation-fill-mode: forwards;
+}
+
+@keyframes CanvasBg__fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
