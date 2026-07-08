@@ -111,15 +111,6 @@ export type SphereProps = ConnectorItem & {
   position?: [number, number, number];
 };
 
-export type SphereApi = {
-  applyImpulse: (impulse: { multiplyScalar: (value: number) => unknown }) => void;
-  translation: () => unknown;
-};
-
-export type PointerApi = {
-  setNextKinematicTranslation: (translation: unknown) => void;
-};
-
 export type SSGIPassNode<TRgb = unknown, TAlpha = unknown> = {
   sliceCount: NumericUniform;
   stepCount: NumericUniform;

@@ -1,4 +1,5 @@
-import { CanvasBg, Main, Sector } from "@/shared/ui";
+import { CanvasBg } from "@/features/CanvasBg";
+import { Main, Sector } from "@/shared/ui";
 
 import { AboutMe } from "../AboutMe";
 

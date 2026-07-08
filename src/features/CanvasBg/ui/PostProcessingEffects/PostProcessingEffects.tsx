@@ -2,8 +2,8 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useLayoutEffect, useRef } from "react";
 import * as THREE from "three/webgpu";
 
-import { canvasBgConfig } from "@/shared/config";
-import { createCanvasBgPipeline } from "@/shared/lib/canvasBg";
+import { canvasBgConfig } from "../../config";
+import { createCanvasBgPipeline } from "../../lib";
 
 export const PostProcessingEffects = (): null => {
   const { gl, scene, camera } = useThree();

@@ -5,8 +5,8 @@ import type { JSX } from "react";
 import { useMemo, useRef } from "react";
 import * as THREE from "three/webgpu";
 
-import { canvasBgConfig } from "@/shared/config";
-import type { SphereProps } from "@/shared/types";
+import { canvasBgConfig } from "../../config";
+import type { SphereProps } from "../../lib";
 
 type SphereComponentProps = SphereProps & {
   randomPosition: (spread: number) => number;

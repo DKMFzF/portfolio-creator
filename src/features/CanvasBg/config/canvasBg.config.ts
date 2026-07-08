@@ -1,4 +1,4 @@
-import type { CanvasBgConfig } from "@/shared/types";
+import type { CanvasBgConfig } from "../lib/canvasBg.types";
 
 import {
   CANVAS_BG_ACCENT_PALETTE,

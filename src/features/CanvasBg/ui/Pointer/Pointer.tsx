@@ -4,7 +4,7 @@ import type { JSX } from "react";
 import { useRef } from "react";
 import * as THREE from "three/webgpu";
 
-import { canvasBgConfig } from "@/shared/config";
+import { canvasBgConfig } from "../../config";
 
 type PointerProps = {
   motionVector?: THREE.Vector3;

@@ -1,6 +1,6 @@
 import * as THREE from "three/webgpu";
 
-import { canvasBgConfig } from "@/shared/config";
+import { canvasBgConfig } from "../config";
 
 export const createWebGpuRenderer = (canvas: HTMLCanvasElement): Promise<THREE.WebGPURenderer> => {
   // WebGPU-рендерер должен быть инициализирован асинхронно до первого кадра Canvas.

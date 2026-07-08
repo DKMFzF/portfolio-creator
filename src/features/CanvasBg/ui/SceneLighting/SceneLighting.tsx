@@ -1,7 +1,7 @@
 import { Environment, Lightformer } from "@react-three/drei";
 import type { JSX } from "react";
 
-import { canvasBgConfig } from "@/shared/config";
+import { canvasBgConfig } from "../../config";
 
 export const SceneLighting = (): JSX.Element => {
   return (

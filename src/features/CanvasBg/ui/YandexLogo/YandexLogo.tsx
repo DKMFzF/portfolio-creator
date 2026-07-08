@@ -5,7 +5,7 @@ import type { JSX } from "react";
 import { useMemo, useRef } from "react";
 import * as THREE from "three/webgpu";
 
-import { canvasBgConfig } from "@/shared/config";
+import { canvasBgConfig } from "../../config";
 
 const MODEL_PATH = "/yandex_3d-logo.glb";
 

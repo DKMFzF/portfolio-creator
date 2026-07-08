@@ -1,5 +1,5 @@
-import { canvasBgConfig, CANVAS_BG_CONNECTOR_PATTERN } from "@/shared/config";
-import type { ConnectorColorToken, ConnectorItem } from "@/shared/types";
+import { canvasBgConfig, CANVAS_BG_CONNECTOR_PATTERN } from "../config";
+import type { ConnectorColorToken, ConnectorItem } from "./canvasBg.types";
 
 const resolveColorToken = (token: ConnectorColorToken, accentColor: string): ConnectorItem => {
   if (token === "accent") {

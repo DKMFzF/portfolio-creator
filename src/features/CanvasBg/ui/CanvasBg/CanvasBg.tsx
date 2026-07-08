@@ -2,11 +2,11 @@
 
 import type { CSSProperties, JSX } from "react";
 
-import { canvasBgConfig } from "@/shared/config";
+import { canvasBgConfig } from "../../config";
 import cn from "@/shared/lib/cn";
 
 import styles from "./CanvasBg.module.css";
-import { CanvasBgRoot } from "./CanvasBgRoot";
+import { CanvasBgRoot } from "../CanvasBgRoot";
 
 const bem = cn(canvasBgConfig.className);
 

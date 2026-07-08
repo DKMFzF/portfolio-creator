@@ -4,9 +4,9 @@ import { traa } from "three/examples/jsm/tsl/display/TRAANode.js";
 import * as TSL from "three/tsl";
 import * as THREE from "three/webgpu";
 
-import { canvasBgConfig } from "@/shared/config";
+import { canvasBgConfig } from "../../config";
 import { ssgi } from "@/shared/lib/ssgi/SSGINode";
-import type { SSGIPassNode } from "@/shared/types";
+import type { SSGIPassNode } from "../canvasBg.types";
 
 type CreateCanvasBgPipelineParams = {
   scene: THREE.Scene;

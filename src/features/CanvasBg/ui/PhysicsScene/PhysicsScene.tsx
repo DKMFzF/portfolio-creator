@@ -2,12 +2,12 @@ import { Physics } from "@react-three/rapier";
 import type { JSX } from "react";
 import * as THREE from "three/webgpu";
 
-import { canvasBgConfig } from "@/shared/config";
-import type { ConnectorItem } from "@/shared/types";
+import { canvasBgConfig } from "../../config";
+import type { ConnectorItem } from "../../lib";
 
-import { Pointer } from "./Pointer";
-import { Sphere } from "./Sphere";
-import { YandexLogo } from "./YandexLogo";
+import { Pointer } from "../Pointer";
+import { Sphere } from "../Sphere";
+import { YandexLogo } from "../YandexLogo";
 
 type PhysicsSceneProps = {
   connectors: ConnectorItem[];

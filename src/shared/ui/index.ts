@@ -3,4 +3,3 @@ export * from './Sector';
 export * from "./Link";
 export * from "./Logo";
 export * from "./Text";
-export * from "./CanvasBg";

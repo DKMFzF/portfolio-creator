@@ -1,4 +1,4 @@
-import type { ConnectorColorToken } from "@/shared/types";
+import type { ConnectorColorToken } from "../lib/canvasBg.types";
 
 export const CANVAS_BG_CLASS_NAME = "CanvasBg";
 
