@@ -28,7 +28,7 @@ export const canvasBgConfig: CanvasBgConfig = {
     fov: 17.5,
   },
   renderer: {
-    dpr: [1, 1.5],
+    dpr: [.5, .8],
     antialias: false,
   },
   physics: {
