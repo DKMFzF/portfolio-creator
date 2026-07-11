@@ -16,6 +16,9 @@ export function Home(): JSX.Element {
       <Sector backgroundColor={"black"} padding={"0"} height={"100%"}>
         <Gallery />
       </Sector>
+      <Sector backgroundColor={"black"} padding={"0"} height={"100vh"}>
+          Тестовая секция
+      </Sector>
     </Main>
   );
 }
