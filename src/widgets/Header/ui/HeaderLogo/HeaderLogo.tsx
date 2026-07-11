@@ -11,7 +11,7 @@ export const HeaderLogo = (): JSX.Element => {
   return (
     <div className={styles[bem()]}>
       <Link href="/">
-        <Logo src="/label.svg" alt="DKMFZF" />
+        <Logo src="/dkmfzf.svg" alt="DKMFZF" />
       </Link>
     </div>
   );
