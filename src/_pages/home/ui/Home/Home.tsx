@@ -1,5 +1,6 @@
 import { CanvasBg } from "@/features/CanvasBg";
 import { Main, Sector } from "@/shared/ui";
+import { Gallery } from "@/widgets/Gallery";
 
 import { AboutMe } from "../AboutMe";
 
@@ -10,8 +11,8 @@ export function Home() {
         <CanvasBg />
         <AboutMe />
       </Sector>
-      <Sector display={"flex"} justify={"center"} align={"center"} backgroundColor={"black"}>
-        <h1>Привет мир!</h1>
+      <Sector backgroundColor={"black"} padding={"0"} height={"100%"}>
+        <Gallery />
       </Sector>
     </Main>
   );

@@ -6,11 +6,15 @@ import styles from "./Sector.module.css";
 
 const bem = cn('Sector');
 
+const paddingPage = "--padding-page";
+
 type Props = PropsWithChildren & {
   display?: CSSProperties["display"];
   justify?: CSSProperties["justifyContent"];
   align?: CSSProperties["alignItems"];
   backgroundColor?: CSSProperties["backgroundColor"];
+  padding?: CSSProperties["padding"];
+  height?: CSSProperties["height"];
 };
 
 export const Sector = ({
@@ -19,6 +23,8 @@ export const Sector = ({
  justify = "default",
  align = "default",
  backgroundColor = "white",
+ padding = paddingPage,
+ height = "100vh",
 }: Props): JSX.Element => {
   return (
     <section className={styles[bem()]} style={{
@@ -26,6 +32,8 @@ export const Sector = ({
       justifyContent: `${justify}`,
       alignItems: `${align}`,
       backgroundColor: `${backgroundColor}`,
+      padding: `${padding}`,
+      height: `${height}`,
     }}>
       {children}
     </section>
