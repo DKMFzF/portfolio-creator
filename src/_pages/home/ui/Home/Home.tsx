@@ -10,6 +10,9 @@ export function Home() {
         <CanvasBg />
         <AboutMe />
       </Sector>
+      <Sector display={"flex"} justify={"center"} align={"center"} backgroundColor={"black"}>
+        <h1>Привет мир!</h1>
+      </Sector>
     </Main>
   );
 }

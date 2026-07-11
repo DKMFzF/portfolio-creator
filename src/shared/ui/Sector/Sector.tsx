@@ -10,6 +10,7 @@ type Props = PropsWithChildren & {
   display?: CSSProperties["display"];
   justify?: CSSProperties["justifyContent"];
   align?: CSSProperties["alignItems"];
+  backgroundColor?: CSSProperties["backgroundColor"];
 };
 
 export const Sector = ({
@@ -17,12 +18,14 @@ export const Sector = ({
  display = "default",
  justify = "default",
  align = "default",
+ backgroundColor = "white",
 }: Props): JSX.Element => {
   return (
     <section className={styles[bem()]} style={{
       display: `${display}`,
       justifyContent: `${justify}`,
       alignItems: `${align}`,
+      backgroundColor: `${backgroundColor}`,
     }}>
       {children}
     </section>
