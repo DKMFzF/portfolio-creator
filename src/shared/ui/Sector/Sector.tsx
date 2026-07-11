@@ -15,6 +15,7 @@ type Props = PropsWithChildren & {
   backgroundColor?: CSSProperties["backgroundColor"];
   padding?: CSSProperties["padding"];
   height?: CSSProperties["height"];
+  minHeight?: CSSProperties["minHeight"];
 };
 
 export const Sector = ({
@@ -24,7 +25,8 @@ export const Sector = ({
  align = "default",
  backgroundColor = "white",
  padding = paddingPage,
- height = "100vh",
+ height,
+ minHeight,
 }: Props): JSX.Element => {
   return (
     <section className={styles[bem()]} style={{
@@ -34,6 +36,7 @@ export const Sector = ({
       backgroundColor: `${backgroundColor}`,
       padding: `${padding}`,
       height: `${height}`,
+      minHeight: `${minHeight}`,
     }}>
       {children}
     </section>

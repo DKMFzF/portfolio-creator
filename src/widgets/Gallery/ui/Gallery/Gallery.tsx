@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 
 import cn from "@/shared/lib/cn";
+import { DefaultBg } from "@/shared/ui";
 
 import styles from "./Gallery.module.css";
 
@@ -10,16 +11,18 @@ const galleryImages = Array.from({ length: 16 }, (_, index) => `/gallery/img${in
 
 export const Gallery = (): JSX.Element => {
   return (
-    <div className={styles[bem()]}>
-      {galleryImages.map((imageSrc) => (
-        <img
-          key={imageSrc}
-          className={styles[bem("Image")]}
-          src={imageSrc}
-          alt=""
-          loading="lazy"
-        />
-      ))}
-    </div>
+    <DefaultBg>
+      <div className={styles[bem()]}>
+        {galleryImages.map((imageSrc) => (
+          <img
+            key={imageSrc}
+            className={styles[bem("Image")]}
+            src={imageSrc}
+            alt=""
+            loading="lazy"
+          />
+        ))}
+      </div>
+    </DefaultBg>
   );
 };
