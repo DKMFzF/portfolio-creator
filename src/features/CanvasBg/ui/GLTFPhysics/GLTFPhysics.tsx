@@ -7,14 +7,16 @@ import * as THREE from "three/webgpu";
 
 import { canvasBgConfig } from "../../config";
 
-const MODEL_PATH = "/yandex_3d-logo.glb";
-
 type GLTFScene = {
   scene: THREE.Group<THREE.Object3DEventMap>;
 };
 
-export const YandexLogo = (): JSX.Element => {
-  const { scene } = useGLTF(MODEL_PATH) as GLTFScene;
+type GLTFPhysicsProps = {
+  modelPath: string;
+};
+
+export const GLTFPhysics = ({ modelPath }: GLTFPhysicsProps): JSX.Element => {
+  const { scene } = useGLTF(modelPath) as GLTFScene;
   const bodyRef = useRef<RapierRigidBody>(null);
   const motionVector = useMemo(() => new THREE.Vector3(), []);
 
@@ -54,5 +56,3 @@ export const YandexLogo = (): JSX.Element => {
     </RigidBody>
   );
 };
-
-useGLTF.preload(MODEL_PATH);
