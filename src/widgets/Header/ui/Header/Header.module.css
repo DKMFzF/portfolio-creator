@@ -1,5 +1,5 @@
 .Header {
-  position: absolute;
+  position: fixed;
   top: var(--padding-page);
   left: var(--padding-page);
   right: var(--padding-page);

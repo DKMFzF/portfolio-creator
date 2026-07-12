@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import type { JSX, PropsWithChildren } from "react";
 
 import { Header } from '@/widgets/Header/';
+import { Main } from "@/shared/ui";
 import { siteConfig, titleSiteTemplate } from '@/shared/config';
 import cn from "@/shared/lib/cn";
 import "@/shared/styles";
@@ -49,7 +50,9 @@ export function RootLayout({ children }: PropsWithChildren): JSX.Element {
       <body>
         <div className={styles[bem()]}>
           <Header />
-          {children}
+          <Main>
+            {children}
+          </Main>
         </div>
       </body>
     </html>
