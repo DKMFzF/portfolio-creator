@@ -1,5 +1,5 @@
 .Main {
     box-sizing: border-box;
     position: relative;
-    padding-top: 100vh;
+    z-index: 1;
 }

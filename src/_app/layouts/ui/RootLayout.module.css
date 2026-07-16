@@ -1,8 +1,4 @@
 .RootLayout {
   position: relative;
-  /*margin: 20px;*/
-
-  /* для теста */
-  background-color: #ffffff;
   color: #fff;
 }

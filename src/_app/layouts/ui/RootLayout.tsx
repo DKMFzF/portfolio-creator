@@ -5,7 +5,7 @@ import { siteConfig, titleSiteTemplate } from '@/shared/config';
 import cn from "@/shared/lib/cn";
 import "@/shared/styles";
 
-import { LayoutContent } from "./LayoutContent";
+import { LayoutContent } from "./LayoutContent/LayoutContent";
 import styles from "./RootLayout.module.css";
 
 const bem = cn('RootLayout');

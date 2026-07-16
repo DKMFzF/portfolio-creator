@@ -14,7 +14,16 @@ const bem = cn("Footer");
 export const Footer = forwardRef<HTMLElement, object>(
   (_, ref): JSX.Element => {
     return (
-      <Sector backgroundColor={"black"} padding={"20px"} height={"100vh"}>
+      <Sector
+        position={"fixed"}
+        bottom={"0"}
+        left={"0"}
+        right={"0"}
+        backgroundColor={"black"}
+        padding={"20px"}
+        height={"100vh"}
+        zIndex={"0"}
+      >
         <footer ref={ref} className={styles[bem()]}>
           <FooterTopInfo />
           <FooterLogo />
