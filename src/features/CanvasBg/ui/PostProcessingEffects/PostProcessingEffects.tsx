@@ -2,12 +2,14 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useLayoutEffect, useRef } from "react";
 import * as THREE from "three/webgpu";
 
+import type { Nullable } from "@/shared/types/nullable";
+
 import { canvasBgConfig } from "../../config";
 import { createCanvasBgPipeline } from "../../lib";
 
 export const PostProcessingEffects = (): null => {
   const { gl, scene, camera } = useThree();
-  const postProcessingRef = useRef<THREE.PostProcessing | null>(null);
+  const postProcessingRef = useRef<Nullable<THREE.PostProcessing>>(null);
 
   useLayoutEffect(() => {
     // webgpu postprocessing строится один раз на mount

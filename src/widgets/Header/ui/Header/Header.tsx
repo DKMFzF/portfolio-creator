@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { forwardRef } from "react";
 
 import { routes } from "@/shared/config/routes";
 
@@ -11,11 +12,15 @@ import styles from "./Header.module.css";
 
 const bem = cn('Header');
 
-export const Header = (): JSX.Element => {
-  return (
-    <header className={styles[bem()]}>
-      <HeaderLogo />
-      <HeaderList items={routes} />
-    </header>
-  );
-};
+export const Header = forwardRef<HTMLElement, object>(
+  (_, ref): JSX.Element => {
+    return (
+      <header ref={ref} className={styles[bem()]}>
+        <HeaderLogo />
+        <HeaderList items={routes} />
+      </header>
+    );
+  },
+);
+
+Header.displayName = "Header";

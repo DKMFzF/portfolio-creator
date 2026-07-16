@@ -2,11 +2,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { RefObject, useLayoutEffect } from "react";
 
+import type { Nullable } from "@/shared/types/nullable";
+
 import { galleryHorizontalScrollConfig } from "../config";
 
 type UseGalleryHorizontalScrollParams = {
-  sectionRef: RefObject<HTMLDivElement | null>;
-  trackRef: RefObject<HTMLDivElement | null>;
+  sectionRef: RefObject<Nullable<HTMLDivElement>>;
+  trackRef: RefObject<Nullable<HTMLDivElement>>;
 };
 
 gsap.registerPlugin(ScrollTrigger);
