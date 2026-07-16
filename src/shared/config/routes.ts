@@ -14,13 +14,13 @@ export const routes: Route[] = [
     name: "lab",
   },
   {
-    link: "/my-path",
-    name: "my path",
-  },
-  {
     link: "какая-то ссылка",
     name: "resume",
     target: "_blank",
+  },
+  {
+    link: "/my-path",
+    name: "my path",
   },
   {
     link: "https://github.com/DKMFzF",

@@ -1,0 +1,13 @@
+.FooterEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.FooterEmail__label {
+  font-size: var(--font-size-s);
+}
+
+.FooterEmail__value {
+  font-size: var(--font-size);
+}

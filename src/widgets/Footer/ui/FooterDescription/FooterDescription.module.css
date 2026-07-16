@@ -1,0 +1,5 @@
+.FooterDescription {
+  width: 26vw;
+  line-height: 1.2;
+  font-size: var(--font-size);
+}

@@ -1,0 +1,4 @@
+.FooterLink {
+  font-size: var(--fint-size-xl);
+  text-transform: uppercase;
+}
