@@ -17,20 +17,20 @@ const bem = cn("LayoutContent");
 
 export const LayoutContent = ({ children }: PropsWithChildren): JSX.Element => {
   const headerRef = useRef<Nullable<HTMLElement>>(null);
-  const footerRef = useRef<Nullable<HTMLElement>>(null);
+  const mainRef = useRef<Nullable<HTMLDivElement>>(null);
 
   useHeaderVisibilityOnFooter({
     headerRef,
-    footerRef,
+    footerRef: mainRef,
   });
 
   return (
     <div className={styles[bem()]}>
       <Header ref={headerRef} />
-      <div className={styles[bem("main")]}>
+      <div ref={mainRef} className={styles[bem("main")]}>
         <Main>{children}</Main>
       </div>
-      <Footer ref={footerRef} />
+      <Footer />
     </div>
   );
 };

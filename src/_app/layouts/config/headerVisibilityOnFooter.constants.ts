@@ -7,7 +7,7 @@ export const headerVisibilityOnFooterConstants = {
     overwrite: "auto",
   },
   trigger: {
-    start: "top bottom",
+    start: "bottom bottom",
     end: "bottom bottom",
   },
 } as const;
