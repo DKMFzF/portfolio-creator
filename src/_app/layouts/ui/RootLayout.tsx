@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import type { JSX, PropsWithChildren } from "react";
 
-import { Header } from '@/widgets/Header/';
+import { Header } from '@/widgets/Header';
+import { Footer } from '@/widgets/Footer';
 import { Main } from "@/shared/ui";
 import { siteConfig, titleSiteTemplate } from '@/shared/config';
 import cn from "@/shared/lib/cn";
@@ -53,6 +54,7 @@ export function RootLayout({ children }: PropsWithChildren): JSX.Element {
           <Main>
             {children}
           </Main>
+          <Footer />
         </div>
       </body>
     </html>
