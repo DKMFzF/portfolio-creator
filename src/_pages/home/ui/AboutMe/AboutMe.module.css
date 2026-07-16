@@ -5,9 +5,11 @@
   align-items: end;
   mix-blend-mode: difference;
   color: #fff;
+  font-size: var(--font-size);
 }
 
 .AboutMe__name {
   display: flex;
   gap: 1rem;
+  font-size: var(--font-size);
 }

@@ -5,23 +5,24 @@ import cn from "@/shared/lib/cn";
 import styles from "./Text.module.css";
 
 const bem = cn("Text");
+const defaultFontSize = 'var(--font-size)';
 
 type Color = "default" | "ghost";
 type Props = PropsWithChildren & {
   color?: Color;
-  fontSize?: number;
+  fontSize?: string;
 }
 
 export const Text = ({
   children,
-  fontSize = 30,
+  fontSize = defaultFontSize,
   color = "default",
 }: Props): JSX.Element => {
   return (
     <span
       className={styles[bem()]}
       style={{
-        fontSize: `${fontSize}px`,
+        fontSize: `${fontSize}`,
         // TODO: убрать стилизацию через js и добавить классы
         color: `${color?.startsWith("default") ? "white" : "rgb(255, 255, 255, 19%)"}`,
       }}
