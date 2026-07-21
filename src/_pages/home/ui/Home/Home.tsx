@@ -1,5 +1,6 @@
 import { JSX } from "react";
 
+import { ShapeGridBg } from "@/features/ShapeGridBg";
 import { Sector } from "@/shared/ui";
 
 import { AboutMe } from "../AboutMe";
@@ -16,7 +17,7 @@ export function Home(): JSX.Element {
           top={"0"}
           zIndex={"0"}
         >
-          {/* <CanvasBg /> */}
+          <ShapeGridBg />
           <AboutMe />
         </Sector>
 

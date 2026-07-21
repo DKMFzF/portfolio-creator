@@ -1,0 +1,6 @@
+.ShapeGridBg {
+  position: absolute;
+  inset: 0;
+  z-index: var(--shape-grid-bg-z-index);
+  pointer-events: none;
+}
