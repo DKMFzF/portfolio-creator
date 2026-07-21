@@ -14,7 +14,7 @@ export const AboutMe = (): JSX.Element => {
         <Text>kirill doroshev</Text>
         <Text color={"ghost"}>engineer at etl data platform</Text>
       </div>
-      <Logo src={"/arrow.svg"} alt={"arrow on my photos"} />
+      <Logo src={"/arrow.svg"} alt={"arrow on my photos"} style={{ width: "20px" }}/>
     </div>
   );
 }

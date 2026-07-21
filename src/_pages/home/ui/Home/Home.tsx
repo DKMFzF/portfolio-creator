@@ -1,7 +1,5 @@
 import { JSX } from "react";
 
-import { Gallery } from "@/widgets/Gallery";
-import { CanvasBg } from "@/features/CanvasBg";
 import { Sector } from "@/shared/ui";
 
 import { AboutMe } from "../AboutMe";
@@ -18,7 +16,7 @@ export function Home(): JSX.Element {
           top={"0"}
           zIndex={"0"}
         >
-          <CanvasBg />
+          {/* <CanvasBg /> */}
           <AboutMe />
         </Sector>
 
@@ -30,9 +28,9 @@ export function Home(): JSX.Element {
         >
         </Sector>
 
-        <Sector backgroundColor={"black"} padding={"0"} height={"100%"}>
+        {/* <Sector backgroundColor={"black"} padding={"0"} height={"100%"}>
           <Gallery />
-        </Sector>
+        </Sector> */}
       </>
   );
 }

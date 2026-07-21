@@ -20,7 +20,6 @@ export const Footer = forwardRef<HTMLElement, object>(
         left={"0"}
         right={"0"}
         backgroundColor={"black"}
-        padding={"20px"}
         height={"100vh"}
         zIndex={"0"}
       >
